@@ -1,0 +1,5 @@
+loan_id,customer_id,loan_amount,interest_rate,status,start_date
+1,1001,15000,5.5,Active,2023-04-01
+2,1002,25000,6,Active,2022-08-15
+3,1004,10000,4.75,Paid,2020-06-01
+4,1006,50000,5.25,Active,2021-11-20

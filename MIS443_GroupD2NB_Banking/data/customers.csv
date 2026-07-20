@@ -1,0 +1,8 @@
+customer_id,first_name,last_name,email,branch_id,account_opened_date
+1001,Alice,Smith,alice.smith@email.com,1,2020-03-15
+1002,Bob,Johnson,bob.j@email.com,1,2019-07-22
+1003,Carol,Williams,carol.w@email.com,2,2021-01-10
+1004,David,Brown,david.b@email.com,2,2020-11-05
+1005,Eva,Davis,eva.d@email.com,3,2022-06-18
+1006,Frank,Miller,frank.m@email.com,3,2018-09-30
+1007,George,Wilson,george.w@email.com,5,2025-03-01
