@@ -78,37 +78,6 @@ Every company runs on data it doesn't fully understand yet. The BA who can query
 
 <br/>
 
-## Repo structure
-
-Each assignment lives in its own folder, with:
-- a `.sql` file — the actual queries, commented step by step
-- a `.docx` file — the write-up (question → method → explanation → answer), with screenshots
-
-| Folder | What it covers |
-|---|---|
-| `Assignment0/` | Installing PostgreSQL, importing the `sqlda` sample database, exploring all 10 tables with `SELECT ... LIMIT` and `COUNT(*) + UNION ALL` |
-
-<br/>
-
-## Progress
-
-- [x] Chapter 1 — Introduction to Data Management Systems
-- [ ] Chapter 2 — Creating Tables with Solid Structures
-- [ ] Chapter 3 — Exchanging Data Using COPY
-- [ ] Chapter 4 — Manipulating Data with Python
-- [ ] Chapter 5 — Presenting Data with SELECT
-- [ ] Chapter 6 — Transforming and Updating Data
-- [ ] Chapter 7 — Defining Datasets from Existing Datasets
-- [ ] Chapter 8 — Aggregating Data with GROUP BY
-- [ ] Chapter 9 — Inter-Row Operations with Window Functions
-- [ ] Chapter 10 — Performant SQL
-- [ ] Chapter 11 — Processing JSON and Arrays
-- [ ] Chapter 12 — Advanced Data Types (Date, Text, Geospatial)
-- [ ] Chapter 13 — Inferential Statistics Using SQL
-- [ ] Chapter 14 — A Case Study for Analytics Using SQL
-
-<br/>
-
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E5395,100:1F3864&height=120&section=footer"/>
 
