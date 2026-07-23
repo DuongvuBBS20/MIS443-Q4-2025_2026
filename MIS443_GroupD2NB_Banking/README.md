@@ -62,7 +62,7 @@ MIS443_GroupD2NB_Banking/
 
 ## Source
 
-Schema and question set: [SQL Practice Online - Banking](https://www.sql-practice.online/practice/hr?engine=postgresql)
+Schema and question set: [SQL Practice Online - Banking](https://www.sql-practice.online/practice/banking?engine=postgresql)
 
 ## Acknowledgement
 
