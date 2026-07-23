@@ -2,4 +2,4 @@
 -- Schema: School (SQL Practice Online)
 -- File 01: Create Database
 
-CREATE DATABASE School
+CREATE DATABASE school;
