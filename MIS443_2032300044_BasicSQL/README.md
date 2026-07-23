@@ -1,6 +1,6 @@
 # MIS443_2032300044_BasicSQL
 
-**Assignment 1 — Basic SQL: Install and Load a Database with PostgreSQL**
+**Assignment 1 Basic SQL: Install and Load a Database with PostgreSQL**
 
 Course: MIS 443 - Business Data Management
 Student: Vu Dong Duong (2032300044)
