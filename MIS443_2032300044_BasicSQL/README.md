@@ -37,8 +37,8 @@ union all select 'customer_sales', count(*) from customer_sales
 
 | Question | Answer |
 |---|---|
-| Which table is empty? | `countries` — 0 rows |
-| Which table has fewer than 20 records? | `products` — 12 rows |
+| Which table is empty? | `countries` 0 rows |
+| Which table has fewer than 20 records? | `products` 12 rows |
 
 `dealerships` has exactly 20 rows, so it does not qualify as "fewer than 20".
 
