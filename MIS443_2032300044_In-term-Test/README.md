@@ -1,7 +1,6 @@
 # MIS443 - In-term Test Q4 2025-2026: Northwind SQL Analysis
 
 **Course:** MIS 443 - Business Data Management
-**Lecturer:** Mr. Dang Thai Doan
 **Student:** Vu Dong Duong - 2032300044
 
 ## Project Description
