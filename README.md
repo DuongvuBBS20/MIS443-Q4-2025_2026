@@ -1,86 +1,114 @@
-## MIS 443 - Business Data Management - Q4, 25-26 
-<div align="center">
+# MIS443_GroupD2NB_Chinook
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F3864,100:2E5395&height=220&section=header&text=MIS%20443%20-%20Data%20Management&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Learning%20to%20turn%20raw%20data%20into%20real%20business%20decisions&descAlignY=58&descSize=18" width="100%"/>
+**A PostgreSQL + Python implementation and business analysis of the Chinook digital media store database, built for MIS 443 - Business Data Management.**
 
-<a href="https://github.com/DuongvuBBS20">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=2E5395&center=true&vCenter=true&width=650&lines=Vu+Dong+Duong+%7C+Business+Analysis+Student;Turning+data+into+decisions%2C+one+query+at+a+time;PostgreSQL+%2B+SQL+%2B+Python+%2B+a+lot+of+curiosity" alt="Typing SVG" />
-</a>
+<img src="https://img.shields.io/badge/PostgreSQL-17-0B1E33?style=for-the-badge&logo=postgresql&logoColor=C9A05C" /><img src="https://img.shields.io/badge/Python-Pandas-0B1E33?style=for-the-badge&logo=python&logoColor=C9A05C" /><img src="https://img.shields.io/badge/pgAdmin-4-0B1E33?style=for-the-badge&logo=pgadmin&logoColor=C9A05C" /><img src="https://img.shields.io/badge/Status-Completed-0B1E33?style=for-the-badge&logoColor=C9A05C" />
 
-<br/>
+## Course & Project
+- **Course:** MIS 443 - Business Data Management
+- **Project:** Course Project - Practical Database Implementation for Data Analysis (Option 2: Implement an Existing Project)
+- **Lecturer:** Mr. Dang Thai Doan
+- **Timeline:** Week 7
+- **Quarter:** Quarter 4, Academic Year 2025-2026
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+## Group Information
+**Group Name:** D2NB
 
-</div>
+| No. | Student's Name | Student's IRN | GitHub Repository |
+|---|---|---|---|
+| 1 | Vũ Đông Dương | 2032300044 | [View on GitHub](<https://github.com/DuongvuBBS20/MIS443-Q4-2025_2026/tree/main/MIS443_GroupD2NB_Chinook>) |
+| 2 | Thân Quế Ngọc | 2232300060 | [View on GitHub](<https://github.com/thanquengoc/MIS_443/tree/main/MIS443_GroupD2NB_Chinook>) |
+| 3 | Văn Vũ Quỳnh Như | 2232300079 | [View on GitHub](<https://github.com/vvqnhu204/MIS443-Q4-2025_2026/tree/main/MIS443_GroupD2NB_Chinook>) |
+| 4 | Đỗ Hoàng Bảo | 2232300071 | [View on GitHub](<https://github.com/dohoangbao2004-maker/MIS-443/tree/main/MIS443_GroupD2NB_Chinook>) |
 
-<br/>
+## Selected Schema
+**Chinook** - a relational database simulating a digital media store, consisting of eleven related tables: `artist`, `album`, `track`, `genre`, `media_type`, `playlist`, `playlist_track`, `employee`, `customer`, `invoice`, and `invoice_line`.
 
-## What is MIS 443?
+## Entity-Relationship Diagram
+![ERD](report/ERD.png)
 
-**MIS 443 – Data Management** is where I'm learning the language every Business Analyst secretly needs: **SQL**. Not just how to write a query that runs, but how to think in data — how to ask a business question, translate it into a query, and turn the result into an insight someone can actually act on.
+## Project Description
+This project studies and re-implements the Chinook database schema in PostgreSQL, then uses SQL and Python to answer real business questions about the store's performance - revenue trends, customer value by country, genre profitability, catalog utilization, sales agent performance, and revenue growth over time. The original data (loaded into schema `public`) is re-implemented into a redesigned schema (`new_chinook`) with explicit constraints, then cross-checked row-by-row against the source to confirm a faithful reproduction.
 
-The course is built around the book *SQL for Data Analytics* and a real relational database (`sqlda`, a fictional company called ZoomZoom), so everything I learn gets applied to actual data, not toy examples.
+## At a Glance
+| Metric | Value |
+|---|---|
+| Total Tables | 11 |
+| Business Questions Analyzed | 6 |
+| Database Engine | PostgreSQL |
+| Analysis Tools | SQL, Python (pandas, matplotlib) |
+| SQL Concepts Applied | Window Functions, CTEs, Aggregations, Anti-Joins |
 
-> If you're visiting this repo — welcome. This is my learning log: real assignments, real mistakes, real fixes. If you're studying the same thing, I hope it saves you some time. 🚀
+## Analytical Questions
+1. Is the store growing, flat, or shrinking over time?
+2. Which countries generate the most revenue, and why?
+3. Which genres earn the most, and does catalog size match demand?
+4. How much of the catalog has never sold a single unit?
+5. Do sales agents differ in ability, or only in customer count?
+6. How did revenue accumulate over time, and how long to reach the first $1,000?
 
-<br/>
+## Tools Used
+- **PostgreSQL** - database management system
+- **pgAdmin 4** - database creation and query execution
+- **Python** (pandas, SQLAlchemy/psycopg2, matplotlib) - data extraction and analysis
+- **Chinook Database** - source schema and sample dataset
+- **Microsoft Word / Canva** - report and presentation
+- **GitHub** - project publishing and version control
 
-## What I'll be able to do by the end of this course
+## Folder Structure
+```
+MIS443_GroupD2NB_Chinook/
+│
+├── codes/
+│   ├── 00_create_database.sql
+│   ├── 01_load_source_data.sql
+│   ├── 02_create_new_schema.sql
+│   ├── 03_load_new_chinook.sql
+│   └── 04_analysis_queries_exercise.sql
+│
+├── python/
+│   └── chinook_analysis.ipynb
+│
+├── report/
+│   ├── MIS443_GroupD2NB_Chinook_Report.docx
+│   └── ERD.png
+│
+├── slide/
+│   └── MIS443_GroupD2NB_Chinook_Presentation.pdf
+│
+└── README.md
+```
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## Instructions for Running the SQL Scripts (How to Run)
 
-### 🗄️ Foundations
-- Understand how relational databases work
-- Design solid table structures (keys, constraints, normalization)
-- Import/export data between systems
+**Step 1 - Create the database**  
 
-### 🔍 Querying & Transforming Data
-- Write SELECT queries with joins, filters, subqueries
-- Aggregate data with GROUP BY
-- Use window functions for running totals, rankings, period comparisons
-- Manipulate data with Python when SQL isn't enough
+Open pgAdmin 4, connect to your PostgreSQL server, and run `codes/00_create_database.sql` from the default `postgres` connection. This creates the `mis443_chinook` database.
 
-</td>
-<td width="50%" valign="top">
+**Step 2 - Load the source data**  
 
-### 🧩 Advanced Techniques
-- Write performant SQL that scales to large datasets
-- Work with JSON, arrays, dates, text, and geospatial data
-- Apply inferential statistics directly in SQL
+Reconnect to `mis443_chinook`, then run `codes/01_load_source_data.sql`. This creates the original Chinook schema (`public`) and populates it with the full sample dataset.
 
-### 📊 Real-World Analysis
-- Turn a business question into a query
-- Turn a query result into a decision-ready insight
-- Present findings clearly to non-technical stakeholders
+**Step 3 - Build the redesigned schema**  
 
-</td>
-</tr>
-</table>
+Run `codes/02_create_new_schema.sql` to create the `new_chinook` schema with all 11 tables, explicit constraints, and indexes.
 
-<br/>
+**Step 4 - Migrate the data**  
 
-## Why this matters (especially for a future BA)
+Run `codes/03_load_new_chinook.sql` to copy all data from `public` into `new_chinook`. The script ends with a cross-check query - confirm every row count matches between the two schemas before continuing.
 
-<div align="center">
-<img src="https://img.shields.io/badge/Business%20Question-➡️-blue?style=flat-square"/>
-<img src="https://img.shields.io/badge/SQL%20Query-➡️-336791?style=flat-square"/>
-<img src="https://img.shields.io/badge/Clean%20Data-➡️-orange?style=flat-square"/>
-<img src="https://img.shields.io/badge/Insight-➡️-green?style=flat-square"/>
-<img src="https://img.shields.io/badge/Decision-🎯-red?style=flat-square"/>
-</div>
+**Step 5 - Run the SQL analysis**  
 
-Every company runs on data it doesn't fully understand yet. The BA who can query the database directly — instead of waiting on someone else to pull a report — is the one who gets to the answer first, asks better follow-up questions, and earns trust in the room. That's the whole point of this course, and this repo is where I'm proving it to myself, one assignment at a time.
+Run `codes/04_analysis_queries_exercise.sql` against the `new_chinook` schema to answer all 6 business questions.
 
-<br/>
+**Step 6 - Run the Python analysis**  
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E5395,100:1F3864&height=120&section=footer"/>
+Open `python/chinook_analysis.ipynb` in Jupyter Notebook. Update the database connection string with your own PostgreSQL credentials, then run all cells to reproduce the analysis, charts, and business conclusions for each question.
 
-*Thanks for stopping by — feel free to star ⭐ if this helped you study SQL too.*
+> Scripts must be run strictly in this order (00 → 01 → 02 → 03 → 04 → python), since each step depends on objects created in the previous one.
 
-</div>
+## Source
+[Chinook Database (lerocha/chinook-database)](https://github.com/lerocha/chinook-database)
+
+## Acknowledgement
+This project was completed collaboratively as a group assignment for MIS 443. All members contributed to database design, SQL query development, Python analysis, testing, and documentation. Individual contributions are detailed in the Word report (Section 10: Responsibilities and contributions of each member).
